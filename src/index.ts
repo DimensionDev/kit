@@ -4,3 +4,4 @@ export * from './file';
 export * from './image';
 export * from './memoize';
 export * from './platform';
+export * from './detect';
