@@ -2,10 +2,6 @@ name: Build
 
 on: [push]
 
-defaults:
-  run:
-    working-directory: ./packages/polyfill
-
 jobs:
   build:
     runs-on: ubuntu-latest
