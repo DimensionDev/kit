@@ -1,0 +1,6 @@
+!/cjs
+!/esm
+/.*
+/scripts
+/tsconfig.esm.json
+/tsconfig.json
