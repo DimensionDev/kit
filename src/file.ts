@@ -10,7 +10,7 @@ export function formatFileSize(
   }
   const units = ['', 'K', 'M', 'G', 'T', 'P'];
   const base = si ? 1000 : 0x400;
-  const n = Math.max(
+  const n = Math.min(
     Math.floor(Math.log(input) / Math.log(base)),
     units.length - 1,
   );
