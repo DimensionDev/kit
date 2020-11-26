@@ -19,7 +19,8 @@
     "react-router": "^5.2.0",
     "react-use": "^15.3.3",
     "rimraf": "^3.0.2",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "web-ext-types": "^3.2.1"
   },
   "peerDependencies": {
     "lodash-es": "^4.17.15",

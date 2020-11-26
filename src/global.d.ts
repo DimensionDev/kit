@@ -1,3 +1,5 @@
+/// <reference types="web-ext-types" />
+
 interface Permissions {
   request(permission: { name: string }): Promise<PermissionStatus>;
 }
