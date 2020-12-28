@@ -11,11 +11,11 @@ const operations = {
   '<<': (a: BigNumber, b: BigNumber) => a.shiftedBy(+b.toNumber()),
   '>>': (a: BigNumber, b: BigNumber) => a.shiftedBy(-b.toNumber()),
   // comparable
-  // '==': (a: BigNumber, b: BigNumber) => a.isEqualTo(b),
-  // '>': (a: BigNumber, b: BigNumber) => a.isGreaterThan(b),
-  // '<': (a: BigNumber, b: BigNumber) => a.isLessThan(b),
-  // '>=': (a: BigNumber, b: BigNumber) => a.isGreaterThanOrEqualTo(b),
-  // '<=': (a: BigNumber, b: BigNumber) => a.isLessThanOrEqualTo(b),
+  '==': (a: BigNumber, b: BigNumber) => a.isEqualTo(b),
+  '>': (a: BigNumber, b: BigNumber) => a.isGreaterThan(b),
+  '<': (a: BigNumber, b: BigNumber) => a.isLessThan(b),
+  '>=': (a: BigNumber, b: BigNumber) => a.isGreaterThanOrEqualTo(b),
+  '<=': (a: BigNumber, b: BigNumber) => a.isLessThanOrEqualTo(b),
   // math kit
   // 'abs': (a: BigNumber) => a.absoluteValue(),
   // 'sqrt': (a: BigNumber) => a.squareRoot(),
