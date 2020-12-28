@@ -23,7 +23,7 @@ export function useQRCodeImageScan(
     current.addEventListener('error', onError);
     return () => {
       current.removeEventListener('load', onLoad);
-      current.removeEventListener('error', onLoad);
+      current.removeEventListener('error', onError);
     };
   }, [image.current]);
   return useAsync(async () => {
