@@ -1,5 +1,7 @@
 /// <reference types="web-ext-types" />
 
+type PositionError = GeolocationPositionError;
+
 interface Permissions {
   request(permission: { name: string }): Promise<PermissionStatus>;
 }
