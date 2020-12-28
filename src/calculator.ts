@@ -21,8 +21,10 @@ const operations = {
   // 'sqrt': (a: BigNumber) => a.squareRoot(),
 };
 
-type Oper = keyof typeof operations;
-
-export function expr(op: Oper, a: BigNumber.Value, b: BigNumber.Value) {
-  return operations[op](new BigNumber(a), new BigNumber(b));
+export function expr<K extends keyof typeof operations>(
+  op: K,
+  a: BigNumber.Value,
+  b: BigNumber.Value,
+): ReturnType<typeof operations[K]> {
+  return operations[op](new BigNumber(a), new BigNumber(b)) as any;
 }
