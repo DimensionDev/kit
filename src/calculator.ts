@@ -16,22 +16,35 @@ const kit = {
   sqrt: (a: BigNumber) => a.squareRoot(),
 };
 
-type Kind = keyof typeof operations | keyof typeof kit;
+const collection = {
+  max: BigNumber.max,
+  min: BigNumber.min,
+  sum: BigNumber.sum,
+};
+
+type Kind =
+  | keyof typeof operations
+  | keyof typeof collection
+  | keyof typeof kit;
 
 type Value<K extends Kind> = K extends keyof typeof operations
-  ? [K, BigNumber.Value | Value<Kind>, BigNumber.Value | Value<Kind>]
+  ? [BigNumber.Value | Value<Kind>, K, BigNumber.Value | Value<Kind>]
   : K extends keyof typeof kit
   ? [K, BigNumber.Value | Value<Kind>]
+  : K extends keyof typeof collection
+  ? [K, ...(BigNumber.Value | Value<Kind>)[]]
   : never;
 
 export function expr(...values: Value<Kind>): BigNumber {
   if (isOperation(values)) {
-    return operations[values[0]](
-      toBigNumber(values[1]),
+    return operations[values[1]](
+      toBigNumber(values[0]),
       toBigNumber(values[2]),
     );
   } else if (isMathKit(values)) {
     return kit[values[0]](toBigNumber(values[1]));
+  } else if (isCollection(values)) {
+    return collection[values[0]](...values.slice(1).map(toBigNumber));
   }
   throw new TypeError('not supported operation');
 }
@@ -40,12 +53,14 @@ function toBigNumber(input: BigNumber.Value | Value<Kind>) {
   return Array.isArray(input) ? expr(...input) : new BigNumber(input);
 }
 
-function isOperation(
-  values: Value<Kind>,
-): values is Value<keyof typeof operations> {
-  return values.length === 3 && Object.keys(operations).includes(values[0]);
+function isOperation(values: any): values is Value<keyof typeof operations> {
+  return Object.keys(operations).includes(values[1]);
 }
 
-function isMathKit(values: Value<Kind>): values is Value<keyof typeof kit> {
-  return values.length === 2 && Object.keys(kit).includes(values[0]);
+function isMathKit(values: any): values is Value<keyof typeof kit> {
+  return Object.keys(kit).includes(values[0]);
+}
+
+function isCollection(values: any): values is Value<keyof typeof collection> {
+  return Object.keys(collection).includes(values[0]);
 }
