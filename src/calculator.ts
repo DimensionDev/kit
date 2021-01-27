@@ -22,10 +22,7 @@ const collection = {
   sum: BigNumber.sum,
 };
 
-type Kind =
-  | keyof typeof operations
-  | keyof typeof collection
-  | keyof typeof kit;
+type Kind = keyof typeof operations | keyof typeof collection | keyof typeof kit;
 
 type Value<K extends Kind> = K extends keyof typeof operations
   ? [BigNumber.Value | Value<Kind>, K, BigNumber.Value | Value<Kind>]
@@ -37,10 +34,7 @@ type Value<K extends Kind> = K extends keyof typeof operations
 
 export function expr(...values: Value<Kind>): BigNumber {
   if (isOperation(values)) {
-    return operations[values[1]](
-      toBigNumber(values[0]),
-      toBigNumber(values[2]),
-    );
+    return operations[values[1]](toBigNumber(values[0]), toBigNumber(values[2]));
   } else if (isMathKit(values)) {
     return kit[values[0]](toBigNumber(values[1]));
   } else if (isCollection(values)) {

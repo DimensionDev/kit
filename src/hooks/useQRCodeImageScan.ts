@@ -1,10 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { MutableRefObject, useEffect, useRef, useState } from 'react';
 import { useAsync } from 'react-use';
 import { loadImage } from '../image';
 
-export function useQRCodeImageScan(
-  image: React.MutableRefObject<HTMLImageElement | null>,
-) {
+export function useQRCodeImageScan(image: MutableRefObject<HTMLImageElement | null>) {
   const scanner = useRef(new BarcodeDetector({ formats: ['qr_code'] }));
   const [source, setSource] = useState('');
   useEffect(() => {
