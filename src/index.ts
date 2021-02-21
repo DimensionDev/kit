@@ -6,3 +6,4 @@ export * from './hooks';
 export * from './image';
 export * from './memoize';
 export * from './platform';
+export * from './captcha';
