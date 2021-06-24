@@ -7,3 +7,5 @@ export * from './image';
 export * from './memoize';
 export * from './platform';
 export * from './captcha';
+export * from './control-flow';
+export * from './enum';
