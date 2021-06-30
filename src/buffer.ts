@@ -1,3 +1,5 @@
+import { toArrayBuffer } from './blob';
+
 export function encodeText(input: string) {
   return new TextEncoder().encode(input);
 }
@@ -21,19 +23,6 @@ export function encodeArrayBuffer(input: ArrayBuffer) {
     encoded += String.fromCharCode(code);
   }
   return btoa(encoded);
-}
-
-export function toArrayBuffer(blob: Blob) {
-  return new Promise<ArrayBuffer>((resolve, reject) => {
-    const reader = new FileReader();
-    reader.addEventListener('error', () => {
-      reject(reader.error);
-    });
-    reader.addEventListener('load', () => {
-      resolve(reader.result as ArrayBuffer);
-    });
-    reader.readAsArrayBuffer(blob);
-  });
 }
 
 export function concatArrayBuffer(...parts: ArrayBuffer[]) {

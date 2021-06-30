@@ -1,4 +1,5 @@
 export * from './buffer';
+export * from './blob';
 export * from './calculator';
 export * from './detect';
 export * from './file';
