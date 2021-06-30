@@ -1,4 +1,4 @@
-import { toArrayBuffer } from './blob';
+import { blobToArrayBuffer } from './blob';
 
 export function encodeText(input: string) {
   return new TextEncoder().encode(input);
@@ -26,7 +26,7 @@ export function encodeArrayBuffer(input: ArrayBuffer) {
 }
 
 export function concatArrayBuffer(...parts: ArrayBuffer[]) {
-  return toArrayBuffer(new Blob(parts));
+  return blobToArrayBuffer(new Blob(parts));
 }
 
 export function isEuqals(a: Uint8Array, b: Uint8Array): boolean;
