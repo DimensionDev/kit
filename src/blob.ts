@@ -1,10 +1,10 @@
-export const toArrayBuffer = factory('readAsArrayBuffer');
+export const blobToArrayBuffer = factory('readAsArrayBuffer');
 
-export const toBinaryString = factory('readAsBinaryString');
+export const blobToBinaryString = factory('readAsBinaryString');
 
-export const toDataURL = factory('readAsDataURL');
+export const blobToDataURL = factory('readAsDataURL');
 
-export const toText = factory('readAsText');
+export const blobToText = factory('readAsText');
 
 interface Methods {
   readAsArrayBuffer: ArrayBuffer;
