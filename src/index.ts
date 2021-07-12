@@ -14,3 +14,4 @@ export * from './hooks/useVideoDevices';
 export * from './image';
 export * from './memoize';
 export * from './platform';
+export * from './string';
