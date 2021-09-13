@@ -4,6 +4,18 @@
     "module": "ESNext",
     "outDir": "esm",
     "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "plugins": [
+      {
+        "transform": "@magic-works/ttypescript-browser-like-import-transformer",
+        "after": true,
+        "appendExtensionName": "true",
+        "extName": ".mjs",
+        "folderImport": true,
+        "rules": {
+          "[a-z].+": false,
+        }
+      }
+    ]
   }
 }
