@@ -10,7 +10,7 @@ import { memoize } from 'lodash-es';
 export function memoizePromise<T extends (...args: Args) => Promise<any>, Args extends any[]>(
   fn: T,
   resolver: Args[1] extends undefined ? undefined | ((...args: Args) => unknown) : (...args: Args) => unknown,
-) {
+): T {
   if (resolver === undefined) resolver = ((<T>(x: T) => x) as unknown) as typeof resolver;
   const memorizedFunction = memoize(
     (async function (...args: Args) {
