@@ -1,5 +1,3 @@
-import { blobToArrayBuffer } from './blob';
-
 export function encodeText(input: string) {
   return new TextEncoder().encode(input);
 }
@@ -37,12 +35,13 @@ export function concatArrayBufferSync(...parts: ArrayBuffer[]): ArrayBuffer {
   return u8.buffer;
 }
 export async function concatArrayBuffer(...parts: ArrayBuffer[]) {
+  console.warn('[Deprecation] Please use concatArrayBufferSync.');
   return concatArrayBufferSync(...parts);
 }
 
-export function isEuqals(a: Uint8Array, b: Uint8Array): boolean;
-export function isEuqals(a: ArrayBuffer, b: ArrayBuffer): boolean;
-export function isEuqals(a: any, b: any): boolean {
+export function isEqual(a: Uint8Array, b: Uint8Array): boolean;
+export function isEqual(a: ArrayBuffer, b: ArrayBuffer): boolean;
+export function isEqual(a: any, b: any): boolean {
   if (a instanceof ArrayBuffer) {
     a = new Uint8Array(a);
   }

@@ -1,4 +1,4 @@
-import { isEuqals } from './buffer';
+import { isEqual } from './buffer';
 
 /* eslint-disable no-bitwise */
 export function getDimensionAsPNG(buf: ArrayBuffer) {
@@ -16,11 +16,11 @@ export function getDimensionAsJPEG(buf: ArrayBuffer) {
 
   const view = new DataView(buf);
   let index = 0;
-  if (!isEuqals(buf.slice(index, index + 4), MAGIC_1)) {
+  if (!isEqual(buf.slice(index, index + 4), MAGIC_1)) {
     return;
   }
   index += 4;
-  if (!isEuqals(buf.slice(index + 2, index + 6), MAGIC_2)) {
+  if (!isEqual(buf.slice(index + 2, index + 6), MAGIC_2)) {
     return;
   }
   let blockLength = view.getUint8(index) * 256 + view.getUint8(index + 1);
