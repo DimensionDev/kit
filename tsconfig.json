@@ -9,8 +9,7 @@
       {
         "transform": "@magic-works/ttypescript-browser-like-import-transformer",
         "after": true,
-        "appendExtensionName": "true",
-        "extName": ".mjs",
+        "appendExtensionName": true,
         "folderImport": true,
         "rules": {
           "[a-z].+": false,
