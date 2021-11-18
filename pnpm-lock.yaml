@@ -7,7 +7,7 @@ specifiers:
   '@types/react-router': ^5.1.17
   lodash: ^4.17.21
   lodash-es: ^4.17.21
-  lodash-unified: ^1.0.0
+  lodash-unified: ^1.0.1
   rimraf: ^3.0.2
   ttypescript: ^1.5.12
   typescript: ^4.6.0-dev.20211118
@@ -15,7 +15,7 @@ specifiers:
 dependencies:
   lodash: 4.17.21
   lodash-es: 4.17.21
-  lodash-unified: 1.0.0_bd4845f8c1bf1d81a616b60758034d0a
+  lodash-unified: 1.0.1_bd4845f8c1bf1d81a616b60758034d0a
 
 devDependencies:
   '@magic-works/ttypescript-browser-like-import-transformer': 3.0.1_typescript@4.6.0-dev.20211118
@@ -155,8 +155,8 @@ packages:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
     dev: false
 
-  /lodash-unified/1.0.0_bd4845f8c1bf1d81a616b60758034d0a:
-    resolution: {integrity: sha512-zH+XBXBYtye6aHtxc9uAfrdGRuIfMcfBkqrCU1GvbnKfWtb9vNu/jz3/QlPoF1ABQfgOvyCWhlxreHeCEAGyEg==}
+  /lodash-unified/1.0.1_bd4845f8c1bf1d81a616b60758034d0a:
+    resolution: {integrity: sha512-Py+twfpWn+2dFQWCuGcp21WiQRwZwnm1cyE3piSt/VtBVKVyxlR58WgOVRzXtmdmDRGJKH8F8GPaA29WK/yK8g==}
     peerDependencies:
       '@types/lodash-es': '*'
       lodash: '*'
