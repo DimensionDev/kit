@@ -23,7 +23,7 @@ export function encodeArrayBuffer(input: ArrayBuffer) {
   return btoa(encoded);
 }
 
-export function concatArrayBufferSync(...parts: ArrayBuffer[]): ArrayBuffer {
+export function concatArrayBuffer(...parts: ArrayBuffer[]): ArrayBuffer {
   const buffers = parts.map((x) => new Uint8Array(x));
   const u8 = new Uint8Array(buffers.reduce((a, b) => a + b.length, 0));
 
@@ -33,10 +33,6 @@ export function concatArrayBufferSync(...parts: ArrayBuffer[]): ArrayBuffer {
     last += each.length;
   }
   return u8.buffer;
-}
-export async function concatArrayBuffer(...parts: ArrayBuffer[]) {
-  console.warn('[Deprecation] Please use concatArrayBufferSync.');
-  return concatArrayBufferSync(...parts);
 }
 
 export function isEqual(a: Uint8Array, b: Uint8Array): boolean;
