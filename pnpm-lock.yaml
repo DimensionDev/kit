@@ -1,222 +1,43 @@
 lockfileVersion: 5.3
 
 specifiers:
-    '@types/lodash-es': ^4.17.6
-    '@types/react': ^17.0.39
-    '@types/react-router': ^5.1.18
-    lodash: ^4.17.21
-    lodash-es: ^4.17.21
-    lodash-unified: ^1.0.1
-    prettier: ^2.5.1
-    rimraf: ^3.0.2
-    typescript: ^4.7.0-dev.20220223
+  '@types/lodash-es': ^4.17.6
+  lodash-es: ^4.17.21
+  prettier: ^2.5.1
+  typescript: ^4.7.0-dev.20220223
 
 dependencies:
-    lodash: 4.17.21
-    lodash-es: 4.17.21
-    lodash-unified: 1.0.1_da03a4540fbd16bbaafbb96724306afd
+  lodash-es: 4.17.21
 
 devDependencies:
-    '@types/lodash-es': 4.17.6
-    '@types/react': 17.0.39
-    '@types/react-router': 5.1.18
-    prettier: 2.5.1
-    rimraf: 3.0.2
-    typescript: 4.7.0-dev.20220223
+  '@types/lodash-es': 4.17.6
+  prettier: 2.5.1
+  typescript: 4.7.0-dev.20220223
 
 packages:
-    /@types/history/4.7.11:
-        resolution:
-            {
-                integrity: sha512-qjDJRrmvBMiTx+jyLxvLfJU7UznFuokDv4f3WRuriHKERccVpFU+8XMQUAbDzoiJCsmexxRExQeMwwCdamSKDA==,
-            }
-        dev: true
 
-    /@types/lodash-es/4.17.6:
-        resolution:
-            {
-                integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==,
-            }
-        dependencies:
-            '@types/lodash': 4.14.178
-        dev: true
+  /@types/lodash-es/4.17.6:
+    resolution: {integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==}
+    dependencies:
+      '@types/lodash': 4.14.178
+    dev: true
 
-    /@types/lodash/4.14.178:
-        resolution:
-            {
-                integrity: sha512-0d5Wd09ItQWH1qFbEyQ7oTQ3GZrMfth5JkbN3EvTKLXcHLRDSXeLnlvlOn0wvxVIwK5o2M8JzP/OWz7T3NRsbw==,
-            }
-        dev: true
+  /@types/lodash/4.14.178:
+    resolution: {integrity: sha512-0d5Wd09ItQWH1qFbEyQ7oTQ3GZrMfth5JkbN3EvTKLXcHLRDSXeLnlvlOn0wvxVIwK5o2M8JzP/OWz7T3NRsbw==}
+    dev: true
 
-    /@types/prop-types/15.7.4:
-        resolution:
-            {
-                integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==,
-            }
-        dev: true
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: false
 
-    /@types/react-router/5.1.18:
-        resolution:
-            {
-                integrity: sha512-YYknwy0D0iOwKQgz9v8nOzt2J6l4gouBmDnWqUUznltOTaon+r8US8ky8HvN0tXvc38U9m6z/t2RsVsnd1zM0g==,
-            }
-        dependencies:
-            '@types/history': 4.7.11
-            '@types/react': 17.0.39
-        dev: true
+  /prettier/2.5.1:
+    resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
 
-    /@types/react/17.0.39:
-        resolution:
-            {
-                integrity: sha512-UVavlfAxDd/AgAacMa60Azl7ygyQNRwC/DsHZmKgNvPmRR5p70AJ5Q9EAmL2NWOJmeV+vVUI4IAP7GZrN8h8Ug==,
-            }
-        dependencies:
-            '@types/prop-types': 15.7.4
-            '@types/scheduler': 0.16.2
-            csstype: 3.0.10
-        dev: true
-
-    /@types/scheduler/0.16.2:
-        resolution:
-            {
-                integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==,
-            }
-        dev: true
-
-    /balanced-match/1.0.0:
-        resolution: { integrity: sha1-ibTRmasr7kneFk6gK4nORi1xt2c= }
-        dev: true
-
-    /brace-expansion/1.1.11:
-        resolution:
-            {
-                integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==,
-            }
-        dependencies:
-            balanced-match: 1.0.0
-            concat-map: 0.0.1
-        dev: true
-
-    /concat-map/0.0.1:
-        resolution: { integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s= }
-        dev: true
-
-    /csstype/3.0.10:
-        resolution:
-            {
-                integrity: sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==,
-            }
-        dev: true
-
-    /fs.realpath/1.0.0:
-        resolution: { integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8= }
-        dev: true
-
-    /glob/7.1.6:
-        resolution:
-            {
-                integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==,
-            }
-        dependencies:
-            fs.realpath: 1.0.0
-            inflight: 1.0.6
-            inherits: 2.0.4
-            minimatch: 3.0.4
-            once: 1.4.0
-            path-is-absolute: 1.0.1
-        dev: true
-
-    /inflight/1.0.6:
-        resolution: { integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk= }
-        dependencies:
-            once: 1.4.0
-            wrappy: 1.0.2
-        dev: true
-
-    /inherits/2.0.4:
-        resolution:
-            {
-                integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==,
-            }
-        dev: true
-
-    /lodash-es/4.17.21:
-        resolution:
-            {
-                integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==,
-            }
-        dev: false
-
-    /lodash-unified/1.0.1_da03a4540fbd16bbaafbb96724306afd:
-        resolution:
-            {
-                integrity: sha512-Py+twfpWn+2dFQWCuGcp21WiQRwZwnm1cyE3piSt/VtBVKVyxlR58WgOVRzXtmdmDRGJKH8F8GPaA29WK/yK8g==,
-            }
-        peerDependencies:
-            '@types/lodash-es': '*'
-            lodash: '*'
-            lodash-es: '*'
-        dependencies:
-            '@types/lodash-es': 4.17.6
-            lodash: 4.17.21
-            lodash-es: 4.17.21
-        dev: false
-
-    /lodash/4.17.21:
-        resolution:
-            {
-                integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==,
-            }
-        dev: false
-
-    /minimatch/3.0.4:
-        resolution:
-            {
-                integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==,
-            }
-        dependencies:
-            brace-expansion: 1.1.11
-        dev: true
-
-    /once/1.4.0:
-        resolution: { integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E= }
-        dependencies:
-            wrappy: 1.0.2
-        dev: true
-
-    /path-is-absolute/1.0.1:
-        resolution: { integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18= }
-        engines: { node: '>=0.10.0' }
-        dev: true
-
-    /prettier/2.5.1:
-        resolution:
-            {
-                integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==,
-            }
-        engines: { node: '>=10.13.0' }
-        hasBin: true
-        dev: true
-
-    /rimraf/3.0.2:
-        resolution:
-            {
-                integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==,
-            }
-        hasBin: true
-        dependencies:
-            glob: 7.1.6
-        dev: true
-
-    /typescript/4.7.0-dev.20220223:
-        resolution:
-            {
-                integrity: sha512-KVrNtXf8TXH5UTOLBo+z95Z5f4J6j6Sv3geGS2td2SRMmlpiWx0AtoeBJEAk5QcnzHkojwfSZnh7xx0gDYu8lg==,
-            }
-        engines: { node: '>=4.2.0' }
-        hasBin: true
-        dev: true
-
-    /wrappy/1.0.2:
-        resolution: { integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8= }
-        dev: true
+  /typescript/4.7.0-dev.20220223:
+    resolution: {integrity: sha512-KVrNtXf8TXH5UTOLBo+z95Z5f4J6j6Sv3geGS2td2SRMmlpiWx0AtoeBJEAk5QcnzHkojwfSZnh7xx0gDYu8lg==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
