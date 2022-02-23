@@ -1,4 +1,4 @@
-import { memoize } from 'lodash-unified'
+import { memoize } from 'lodash'
 /**
  * The promise version of lodash-es/memoize
  * @param f An async function
