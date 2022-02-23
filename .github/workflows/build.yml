@@ -15,5 +15,7 @@ jobs:
                   registry: true
             - name: Install
               run: npx pnpm install
+            - name: Build
+              run: npm run build
             - name: Publish to GitHub Package (unstable)
               run: ./scripts/publish-to-github.sh
