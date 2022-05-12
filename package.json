@@ -8,14 +8,18 @@
     "module": "./esm/index.js",
     "types": "./esm/index.d.ts",
     "type": "module",
-    "files": ["esm", "src"],
+    "files": [
+        "esm",
+        "src"
+    ],
     "scripts": {
         "build": "tsc -p ./tsconfig.json"
     },
     "devDependencies": {
         "@types/lodash-es": "^4.17.6",
         "prettier": "^2.5.1",
-        "typescript": "^4.7.0-dev.20220223"
+        "typescript": "^4.7.0-dev.20220223",
+        "user-agent-data-types": "^0.2.0"
     },
     "dependencies": {
         "lodash-es": "^4.17.21"

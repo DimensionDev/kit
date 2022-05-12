@@ -1,3 +1,5 @@
+import 'user-agent-data-types'
+
 export function formatFileSize(input = 0, si = isMacPlatform(), fractionDigits = 1) {
     if (input === 0 || Number.isNaN(input)) {
         return '0 B'
@@ -13,7 +15,7 @@ export function formatFileSize(input = 0, si = isMacPlatform(), fractionDigits =
 /** @internal */
 function isMacPlatform() {
     try {
-        return /^Mac/.test(navigator.platform)
+        return /^Mac/.test(navigator.userAgentData?.platform ?? navigator.platform)
     } catch {
         return false
     }

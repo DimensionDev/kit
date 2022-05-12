@@ -2,8 +2,8 @@ export function encodeText(input: string) {
     return new TextEncoder().encode(input)
 }
 
-export function decodeText(input: ArrayBuffer) {
-    return new TextDecoder().decode(input)
+export function decodeText(input: Iterable<number>) {
+    return new TextDecoder().decode(Uint8Array.from(input))
 }
 
 export function decodeArrayBuffer(input: string) {
@@ -15,9 +15,9 @@ export function decodeArrayBuffer(input: string) {
     return buffer.buffer
 }
 
-export function encodeArrayBuffer(input: ArrayBuffer) {
+export function encodeArrayBuffer(input: Iterable<number>) {
     let encoded = ''
-    for (const code of new Uint8Array(input)) {
+    for (const code of Uint8Array.from(input)) {
         encoded += String.fromCharCode(code)
     }
     return btoa(encoded)

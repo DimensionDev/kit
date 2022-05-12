@@ -1,10 +1,11 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@types/lodash-es': ^4.17.6
   lodash-es: ^4.17.21
   prettier: ^2.5.1
   typescript: ^4.7.0-dev.20220223
+  user-agent-data-types: ^0.2.0
 
 dependencies:
   lodash-es: 4.17.21
@@ -13,6 +14,7 @@ devDependencies:
   '@types/lodash-es': 4.17.6
   prettier: 2.5.1
   typescript: 4.7.0-dev.20220223
+  user-agent-data-types: 0.2.0
 
 packages:
 
@@ -40,4 +42,8 @@ packages:
     resolution: {integrity: sha512-KVrNtXf8TXH5UTOLBo+z95Z5f4J6j6Sv3geGS2td2SRMmlpiWx0AtoeBJEAk5QcnzHkojwfSZnh7xx0gDYu8lg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+    dev: true
+
+  /user-agent-data-types/0.2.0:
+    resolution: {integrity: sha512-Wpif3UTAFNGwrS+bhryeNSU+wpFf+xyOMn32mMapCEBMJz+SlckkTBkRJ0rayTwWrKmXkbO8DbqVtHXcCVBVKA==}
     dev: true

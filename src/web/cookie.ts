@@ -1,5 +1,4 @@
-export function getCookieValue(name: string): string | undefined {
-    const { cookie } = document
+export function getCookieValue(name: string, cookie = document.cookie): string | undefined {
     const start = cookie.indexOf(`${name}=`)
     if (start === -1) return
     let end: number | undefined = cookie.indexOf('; ', start)

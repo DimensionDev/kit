@@ -1,22 +1,17 @@
-export const blobToDataURL = factory('readAsDataURL')
-export const blobToText = factory('readAsText')
+export const blobToDataURL = factory<string>('DataURL')
+export const blobToText = factory<string>('Text')
 
-interface Methods {
-    readAsDataURL: string
-    readAsText: string
-}
-
-function factory<T extends keyof Methods>(method: T) {
+function factory<T extends string | ArrayBuffer>(method: 'ArrayBuffer' | 'BinaryString' | 'DataURL' | 'Text') {
     return (blob: Blob) => {
-        return new Promise<Methods[T]>((resolve, reject) => {
+        return new Promise<T>((resolve, reject) => {
             const reader = new FileReader()
             reader.addEventListener('error', () => {
                 reject(reader.error)
             })
             reader.addEventListener('load', () => {
-                resolve(reader.result as Methods[T])
+                resolve(reader.result as T)
             })
-            reader[method](blob)
+            reader[`readAs${method}`](blob)
         })
     }
 }
