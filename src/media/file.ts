@@ -1,4 +1,4 @@
-import 'user-agent-data-types'
+/// <reference types="user-agent-data-types" />
 
 export function formatFileSize(input = 0, si = isMacPlatform(), fractionDigits = 1) {
     if (input === 0 || Number.isNaN(input)) {

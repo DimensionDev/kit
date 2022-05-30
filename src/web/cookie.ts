@@ -1,3 +1,4 @@
+/** @deprecated Use [CookieStore](https://developer.mozilla.org/en-US/docs/Web/API/Cookie_Store_API) instead. */
 export function getCookieValue(name: string, cookie = document.cookie): string | undefined {
     const start = cookie.indexOf(`${name}=`)
     if (start === -1) return
