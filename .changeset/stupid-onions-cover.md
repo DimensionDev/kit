@@ -1,5 +1,5 @@
 ---
-'@dimensiondev/kit': minor
+'@masknet/kit': minor
 ---
 
 remove AbortSignal.timeout
