@@ -1,9 +1,10 @@
 {
-    "name": "@dimensiondev/kit",
+    "name": "@masknet/kit",
     "version": "0.0.0",
+    "packageManager": "pnpm@7.13.2",
     "description": "A toolkit library.",
     "license": "MIT",
-    "author": "Septs",
+    "author": "DimensionDev",
     "main": "./esm/index.js",
     "module": "./esm/index.js",
     "types": "./esm/index.d.ts",
@@ -13,15 +14,14 @@
         "src"
     ],
     "scripts": {
-        "build": "tsc -p ./tsconfig.json"
+        "build": "tsc -p ./tsconfig.json",
+        "release": "pnpm run build && npx changeset publish"
     },
     "devDependencies": {
-        "@types/lodash-es": "^4.17.6",
-        "prettier": "^2.5.1",
-        "typescript": "^4.7.0-dev.20220223",
-        "user-agent-data-types": "^0.2.0"
+        "@changesets/cli": "^2.25.2",
+        "prettier": "^2.7.1",
+        "typescript": "^4.8.4",
+        "user-agent-data-types": "^0.3.0"
     },
-    "dependencies": {
-        "lodash-es": "^4.17.21"
-    }
+    "dependencies": {}
 }

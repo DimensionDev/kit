@@ -1,12 +1,18 @@
-import { memoize } from 'lodash-es'
 /**
  * The promise version of lodash-es/memoize
+ * @param memoize lodash.memoize
  * @param f An async function
  * @param resolver If the function has 1 param, it can be undefined
  * as `x => x`. If it has more than 1 param, you must specify a function
  * to map the param the memoize key.
  */
 export function memoizePromise<T extends (...args: Args) => Promise<any>, Args extends any[]>(
+    memoize: <T extends (...args: any) => any>(
+        func: T,
+        resolver?: ((...args: Parameters<T>) => any) | undefined,
+    ) => T & {
+        cache: { delete(x: any): boolean }
+    },
     f: T,
     resolver: Args[1] extends undefined ? undefined | ((...args: Args) => unknown) : (...args: Args) => unknown,
 ): T & { cache: Map<any, unknown> } {
