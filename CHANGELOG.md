@@ -1,5 +1,11 @@
 # @masknet/kit
 
+## 0.1.1
+
+### Patch Changes
+
+- c441e50: add lazy decorator
+
 ## 0.1.0
 
 ### Minor Changes
