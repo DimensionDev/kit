@@ -1,8 +1,9 @@
 {
     "name": "@masknet/kit",
     "version": "0.1.0",
-    "packageManager": "pnpm@7.13.2",
+    "packageManager": "pnpm@8.3.1",
     "description": "A toolkit library.",
+    "sideEffect": false,
     "license": "MIT",
     "author": "DimensionDev",
     "main": "./esm/index.js",
@@ -18,10 +19,10 @@
         "release": "pnpm run build && npx changeset publish"
     },
     "devDependencies": {
-        "@changesets/cli": "^2.25.2",
-        "prettier": "^2.7.1",
-        "typescript": "^4.8.4",
-        "user-agent-data-types": "^0.3.0"
-    },
-    "dependencies": {}
+        "@changesets/cli": "^2.26.1",
+        "@masknet/config": "^0.2.0",
+        "prettier": "^2.8.8",
+        "typescript": "^5.0.4",
+        "user-agent-data-types": "^0.3.1"
+    }
 }

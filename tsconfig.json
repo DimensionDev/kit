@@ -1,13 +1,7 @@
 {
+    "extends": "@masknet/config",
     "compilerOptions": {
-        "target": "ES2019",
-        "strict": true,
-        "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true,
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
         "outDir": "esm",
-        "stripInternal": true
+        "rootDir": "./src"
     }
 }

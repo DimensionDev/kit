@@ -39,4 +39,5 @@ export function getDimensionAsJPEG(buf: ArrayBuffer) {
             width: view.getUint8(index + 7) * 256 + view.getUint8(index + 8),
         }
     }
+    return undefined
 }
