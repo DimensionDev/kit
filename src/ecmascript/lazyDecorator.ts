@@ -6,7 +6,8 @@
  * }
  */
 export function lazy<T, V>(
-    target: ClassAccessorDecoratorTarget<T, V>, // context: ClassAccessorDecoratorContext<T, V>
+    target: ClassAccessorDecoratorTarget<T, V>,
+    _context: ClassAccessorDecoratorContext<T, V>,
 ): ClassAccessorDecoratorResult<T, V> {
     const { get, set } = target
     let init = false
