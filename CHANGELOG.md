@@ -1,5 +1,11 @@
 # @masknet/kit
 
+## 0.1.2
+
+### Patch Changes
+
+- da5b0b9: fix lazy decorator type signature
+
 ## 0.1.1
 
 ### Patch Changes
