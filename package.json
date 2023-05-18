@@ -3,7 +3,7 @@
     "version": "0.1.2",
     "packageManager": "pnpm@8.3.1",
     "description": "A toolkit library.",
-    "sideEffect": false,
+    "sideEffects": false,
     "license": "MIT",
     "author": "DimensionDev",
     "main": "./esm/index.js",
