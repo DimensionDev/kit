@@ -1,5 +1,12 @@
 # @masknet/kit
 
+## 0.1.3
+
+### Patch Changes
+
+- 31f1dea: fix package.json
+- 3ce78d7: optimize lazy decorator
+
 ## 0.1.2
 
 ### Patch Changes
