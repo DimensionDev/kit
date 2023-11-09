@@ -14,7 +14,7 @@ export {
 export { formatFileSize } from './media/file.js'
 export { getDimensionAsJPEG, getDimensionAsPNG } from './media/image.js'
 
-export { safeUnreachable, unreachable } from './typescript/control-flow.js'
+export { safeUnreachable, unreachable, todo, unimplemented } from './typescript/control-flow.js'
 export { getEnumAsArray } from './typescript/enum.js'
 export { assertNonNull, isNonNull } from './typescript/nonNull.js'
 
