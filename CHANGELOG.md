@@ -1,5 +1,11 @@
 # @masknet/kit
 
+## 0.2.0
+
+### Minor Changes
+
+- 3c25f47: add todo and unimplemented
+
 ## 0.1.3
 
 ### Patch Changes
