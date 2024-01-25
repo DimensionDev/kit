@@ -12,7 +12,14 @@ export {
     findAvailableImageURL,
 } from './media/detectMediaSupport.js'
 export { formatFileSize } from './media/file.js'
-export { getDimensionAsJPEG, getDimensionAsPNG } from './media/image.js'
+export {
+    type Dimension,
+    getDimensionAsJPEG,
+    getDimensionAsPNG,
+    getDimensionOfJPEG,
+    getDimensionOfPNG,
+    getDimensionByDOM,
+} from './media/image.js'
 
 export { safeUnreachable, unreachable, todo, unimplemented } from './typescript/control-flow.js'
 export { getEnumAsArray } from './typescript/enum.js'

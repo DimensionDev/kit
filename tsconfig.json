@@ -2,6 +2,6 @@
     "extends": "@masknet/config",
     "compilerOptions": {
         "outDir": "esm",
-        "rootDir": "./src"
-    }
+        "rootDir": "./src",
+    },
 }

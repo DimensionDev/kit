@@ -19,10 +19,10 @@
         "release": "pnpm run build && npx changeset publish"
     },
     "devDependencies": {
-        "@changesets/cli": "^2.26.1",
-        "@masknet/config": "^0.2.0",
-        "prettier": "^2.8.8",
-        "typescript": "^5.0.4",
-        "user-agent-data-types": "^0.3.1"
+        "@changesets/cli": "^2.27.1",
+        "@masknet/config": "^0.2.1",
+        "prettier": "^3.2.4",
+        "typescript": "^5.3.3",
+        "user-agent-data-types": "^0.4.2"
     }
 }

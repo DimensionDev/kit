@@ -3,7 +3,7 @@ export function unreachable(value: never): never {
     try {
         // @ts-expect-error
         value = String(value)
-    } catch { }
+    } catch {}
     throw new Error('Unreachable case:' + value)
 }
 
