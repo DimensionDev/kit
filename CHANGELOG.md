@@ -1,5 +1,16 @@
 # @masknet/kit
 
+## 0.3.0
+
+### Minor Changes
+
+- 3dc15d1: add getDimensionByDOM
+
+### Patch Changes
+
+- 3dc15d1: rename getDimensionAsPNG to getDimensionOfPNG
+- 3dc15d1: rename getDimensionAsJPEG to getDimensionOfJPEG
+
 ## 0.2.0
 
 ### Minor Changes
