@@ -1,7 +1,7 @@
 {
     "name": "@masknet/kit",
     "version": "0.3.0",
-    "packageManager": "pnpm@8.3.1",
+    "packageManager": "pnpm@8.15.1",
     "description": "A toolkit library.",
     "sideEffects": false,
     "license": "MIT",
@@ -21,7 +21,7 @@
     "devDependencies": {
         "@changesets/cli": "^2.27.1",
         "@masknet/config": "^0.2.1",
-        "prettier": "^3.2.4",
+        "prettier": "^3.2.5",
         "typescript": "^5.3.3",
         "user-agent-data-types": "^0.4.2"
     }
