@@ -1,5 +1,4 @@
 export { memoizePromise } from './ecmascript/memoizePromise.js'
-export { defer, type DeferTuple } from './ecmascript/defer.js'
 export { concatArrayBuffer } from './ecmascript/concatArrayBuffer.js'
 export { isArrayBufferEqual } from './ecmascript/isArrayBufferEqual.js'
 export { decodeHexString, encodeHexString } from './ecmascript/hex-string.js'
