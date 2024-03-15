@@ -3,6 +3,7 @@ export { concatArrayBuffer } from './ecmascript/concatArrayBuffer.js'
 export { isArrayBufferEqual } from './ecmascript/isArrayBufferEqual.js'
 export { decodeHexString, encodeHexString } from './ecmascript/hex-string.js'
 export { lazy } from './ecmascript/lazyDecorator.js'
+export { warnOnce } from './ecmascript/warnOnce.js'
 
 export {
     detectAudioSupport,
