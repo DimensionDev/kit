@@ -1,5 +1,11 @@
 # @masknet/kit
 
+## 0.4.1
+
+### Patch Changes
+
+- 5e91dda: add warnOnce
+
 ## 0.4.0
 
 ### Minor Changes
