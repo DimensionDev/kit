@@ -10,7 +10,7 @@ export function detectImageSupport(url: string) {
     return detectMediaSupport('img', url)
 }
 
-export async function findAvailableImageURL(srcset: ArrayLike<string>) {
+export async function findAvailableImageURL(srcset: ArrayLike<string> | Iterable<string>) {
     for (const url of Array.from(srcset)) {
         if (await detectImageSupport(url)) {
             return url

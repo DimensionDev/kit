@@ -14,5 +14,5 @@ export function isArrayBufferEqual(a: any, b: any): boolean {
     } else if (a.byteLength !== b.byteLength) {
         return false
     }
-    return a === b ?? a.every((value, index) => b[index] === value)
+    return a === b || a.every((value, index) => b[index] === value)
 }

@@ -1,10 +1,9 @@
-export function encodeText(input: string) {
+export function encodeText(input: string): Uint8Array<ArrayBuffer> {
     return new TextEncoder().encode(input)
 }
 
-export function decodeText(input: Iterable<number> | ArrayBuffer) {
-    if (input instanceof ArrayBuffer) return new TextDecoder().decode(input)
-    return new TextDecoder().decode(Uint8Array.from(input))
+export function decodeText(input: AllowSharedBufferSource) {
+    return new TextDecoder().decode(input)
 }
 
 export function decodeArrayBuffer(input: string) {

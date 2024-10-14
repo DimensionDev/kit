@@ -1,4 +1,4 @@
-export function concatArrayBuffer(...parts: ArrayBuffer[]): ArrayBuffer {
+export function concatArrayBuffer(...parts: (ArrayBuffer | ArrayLike<number>)[]): ArrayBuffer {
     const buffers = parts.map((x) => new Uint8Array(x))
     const u8 = new Uint8Array(buffers.reduce((a, b) => a + b.length, 0))
 
