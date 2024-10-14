@@ -1,5 +1,13 @@
 # @masknet/kit
 
+## 0.4.1
+
+### Patch Changes
+
+- 5e91dda: add warnOnce
+- 167e689: chore: support typescript 5.7.0
+- 167e689: fix: lazy decorator does not work for multiple class instances
+
 ## 0.4.0
 
 ### Minor Changes
