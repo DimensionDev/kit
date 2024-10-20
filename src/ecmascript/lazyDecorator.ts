@@ -5,7 +5,10 @@
  *     ;@lazy accessor value = lazy.of(() => getData())
  * }
  */
-export function lazy<C, T>({ get, set }: ClassAccessorDecoratorTarget<C, T>): ClassAccessorDecoratorResult<C, T> {
+export function lazy<C, T>(
+    { get, set }: ClassAccessorDecoratorTarget<C, T>,
+    _: unknown,
+): ClassAccessorDecoratorResult<C, T> {
     function init(C: C) {
         const current = get.call(C) as any
         initFunctionMap ||= new WeakSet()
