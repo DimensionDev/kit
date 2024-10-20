@@ -1,6 +1,6 @@
 {
     "name": "@masknet/kit",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "packageManager": "pnpm@8.15.1",
     "description": "A toolkit library.",
     "sideEffects": false,
