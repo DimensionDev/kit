@@ -1,5 +1,11 @@
 # @masknet/kit
 
+## 0.4.2
+
+### Patch Changes
+
+- e5ea13c: fix: type error in lazy
+
 ## 0.4.1
 
 ### Patch Changes
